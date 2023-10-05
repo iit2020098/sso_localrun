@@ -1,0 +1,236 @@
+
+.container {
+  display: flex;
+  margin: auto;
+  flex-direction: row;
+  align-items: center; /* Center horizontally */
+  justify-content: center; /* Center vertically */
+  border-radius: 25px;
+  overflow: hidden;
+  background-color: white;
+  max-width: none;
+  width: 90%;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+/* Apply styles to the background */
+
+.backgroundimg {
+  background-image: url('background.png');
+  background-color: rgba(0, 0, 255, 0.25); /* Adjust the opacity as needed */
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+/* Style the container within the .background */
+.background .container {
+  display: flex;
+  margin: auto;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border-radius: 25px;
+  overflow: hidden;
+  background-color: white;
+  max-width: none;
+  width: 90%;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+v
+.h3{
+  align-items: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+/* Style the container */
+
+.logo-small {
+  max-width: 40%;
+  height: 30%;
+  margin: 0 auto; /* Center the logo horizontally */
+}
+
+/* Style the "Hello!" heading */
+.h2 {
+  font-size: 36px; /* Make the font size larger */
+  font-weight: bold;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* Style the "Create Your Account" section */
+.h5{
+  font-size: 20px; /* Make the font size larger */
+  font-weight: bold;
+  margin-top: 20px; /* Add some spacing */
+}
+
+
+.left-section {
+  flex: 1;
+  padding: 10px;
+  align-items: center;
+  align-content: center;
+  border-bottom-left-radius: 25px;
+  display: flex; /* Add this line to make the left section a flex container */
+  flex-direction: column; /* Display children vertically in the left section */
+  justify-content: center; /* Center vertically */
+}
+
+
+.right-section {
+  flex: 1;
+  height: min-content;
+  /* background-image: url('side-img.svg'); */
+  margin: auto;
+  align-self: auto;
+  image-resolution: 50%;
+  position: relative;
+  display: flex; /* Add this line to make the right section a flex container */
+  align-items: center; /* Center content vertically */
+  justify-content: center; /* Center content horizontally */
+}
+
+/* .left-section {
+  flex: 1;
+  padding: 10px;
+  align-items: center;
+  align-content: center;
+  border-bottom-left-radius: 25px;
+}
+
+.right-section {
+  flex: 1;
+  height: min-content;
+  background-image: url('side-img.svg');
+  margin:auto;
+  align-self: auto;
+  image-resolution: 50%;
+  position: relative;
+} */
+
+/* Style the vector image */
+.vector {
+  mask-position: bottom,right;
+  bottom: 0;
+  right: 0;
+}
+
+/* Style the form */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin: auto;
+}
+.input{
+  width: 100%;
+  margin: auto;
+  align-self: auto;
+}
+
+
+
+/* Style input sections */
+.input-section {
+  width: 100%;
+  margin: 5px auto;
+  padding: 1px auto;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  background-color: #f9f9f9;
+}
+
+/* Style the input labels */
+.input-section label {
+  width: 30%;
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+/* Style the input fields */
+.input-section input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: transparent;
+  outline: none;
+}
+
+/* Style the sign-up button */
+.signup-button {
+  background-color: blue;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 15px;
+  width: 60%;
+}
+
+
+/* Style the logo */
+.social-buttons{
+  display: flex;
+  flex-direction: row;
+  width: 70%;
+  margin: auto;
+  justify-content: space-between;
+  
+}
+/* Style for the Google button */
+.google-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1168f4; /* Google's blue */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin: 10px 0;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.google-button:hover {
+  background-color: #01368b; /* Darker shade of blue on hover */
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Style for the GitHub button */
+.github-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #333; /* GitHub's black */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin: 10px 0;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.github-button:hover {
+  background-color: #000; /* Darker shade of black on hover */
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Style for social icons */
+.social-icon {
+  width: 20px; /* Adjust the size as needed */
+  height: 20px; /* Adjust the size as needed */
+  margin-right: 10px; /* Space between icon and text */
+}
